@@ -5,40 +5,40 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.matrix-description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.matrix-description img {
   width: 100%;
 }
 
-.aaa .more-inf {
+.matrix-description .matrix-description__more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa {
+  .matrix-description {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.block-form {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.block-input__task-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.block-form__block-input {
   display: flex;
 }
 
@@ -139,18 +139,20 @@ li>input[type="text"] {
   width: 226px
 }
 
-button.delete img {
+button.block-task__delete img,
+button.block-complete-task__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.block-task__delete img:hover,
+button.block-complete-task__delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#block-form__block-completed-tasks label {
   text-decoration: line-through color: #888;
 }
 

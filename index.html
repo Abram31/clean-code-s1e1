@@ -9,55 +9,55 @@
         charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
+    <div class="matrix-description">
       <img src="./eisenhower-matrix.jpg">
-      <a class="more-inf" 
+      <a class="matrix-description__more-info" 
           href="https://goal-life.com/page/method/matrix-eisenhower"> 
           Wantmore details?
       </a>
     </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
+    <div class="block-form">
+      <p id="block-form__block-title">
         <label for="new-task">AddItem</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+        <div class="block-form__block-input">
+          <input id="new-task"class="block-input__task-input" type="text">
           <button>Add</button>
         </div>
       </p>
         <h3>Todo</h3>
-        <ul id="incompleteTasks">
+        <ul id="block-form__block-task">
           <li>
             <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <label class="block-task__title-task">Pay Bills</label>
+            <input type="text" class="block-form__block-task">
+            <button class="block-task__edit">Edit</button>
+            <button class="block-task__delete">
               <img src="./remove.svg">
             </button>
           </li>
           <li class="edit-mode">
             <input type="checkbox">
-            <label class="task">GoShopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
+            <label class="block-form__block-task">GoShopping</label>
+            <input type="text" value="Go Shopping" class="block-form__block-task">
+            <button class="block-task__edit">Save</button>
+            <button class="block-task__delete">
               <img src="./remove.svg">
             </button>
           </li>
         </ul>
         <h3>Completed</h3>
-        <ul id="completed-tasks">
+        <ul id="block-form__block-completed-tasks">
           <li>
             <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+            <label class="block-form__block-task">See the Doctor</label>   // везде было incompleted, стало completed, подумать как изменить чтоб везде со скриптом был один класс
+            <input type="text" class="block-form__block-task">
+            <button class="block-task__edit">Edit</button>
+            <button class="block-task__delete">
               <img src="./remove.svg">
             </button>
           </li>
         </ul>
-    </div>
+      </div>
     <script src="app.js"></script>
   </body>
 </html>
