@@ -5,23 +5,23 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.matrix-description {
+.description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.matrix-description img {
+.description img {
   width: 100%;
 }
 
-.matrix-description .matrix-description__more-info {
+.description .description__more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .matrix-description {
+  .description {
     text-align: center;
   }
 }
@@ -32,7 +32,7 @@ body {
   margin: 0 auto 0;
 }
 
-.block-input__task-input {
+.block-input__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -161,11 +161,11 @@ ul li input[type=text] {
   display: none
 }
 
-ul li.edit-mode input[type=text] {
+ul li.block-task__block-edit input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.edit-mode label {
+ul li.block-task__block-edit label {
   display: none;
 }

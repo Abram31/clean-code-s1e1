@@ -9,9 +9,9 @@
         charset="utf-8">
   </head>
   <body>
-    <div class="matrix-description">
+    <div class="description">
       <img src="./eisenhower-matrix.jpg">
-      <a class="matrix-description__more-info" 
+      <a class="description__more-info" 
           href="https://goal-life.com/page/method/matrix-eisenhower"> 
           Wantmore details?
       </a>
@@ -20,7 +20,7 @@
       <p id="block-form__block-title">
         <label for="new-task">AddItem</label>
         <div class="block-form__block-input">
-          <input id="new-task"class="block-input__task-input" type="text">
+          <input id="new-task"class="block-input__input" type="text">
           <button>Add</button>
         </div>
       </p>
@@ -35,10 +35,10 @@
               <img src="./remove.svg">
             </button>
           </li>
-          <li class="edit-mode">
+          <li class="block-task__block-edit">
             <input type="checkbox">
             <label class="block-form__block-task">GoShopping</label>
-            <input type="text" value="Go Shopping" class="block-form__block-task">
+            <input type="text" value="Go Shopping" class="block-form__block-task-??">
             <button class="block-task__edit">Save</button>
             <button class="block-task__delete">
               <img src="./remove.svg">
@@ -49,7 +49,7 @@
         <ul id="block-form__block-completed-tasks">
           <li>
             <input type="checkbox" checked>
-            <label class="block-form__block-task">See the Doctor</label>   // везде было incompleted, стало completed, подумать как изменить чтоб везде со скриптом был один класс
+            <label class="block-form__block-task">See the Doctor</label>  
             <input type="text" class="block-form__block-task">
             <button class="block-task__edit">Edit</button>
             <button class="block-task__delete">
