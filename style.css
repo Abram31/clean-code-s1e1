@@ -163,8 +163,9 @@ button {
 }
 
 /* Completed */
-.block-form__block-completed-tasks__title {
-  text-decoration: line-through color: #888;
+#completed-task .block-task__input {
+  text-decoration: line-through;
+  color: #888;
 }
 
 /* Edit Task */
