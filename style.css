@@ -49,20 +49,16 @@ ul {
   padding: 0px;
 }
 
-li,
-h3 {
+li, h3 {
   list-style: none;
 }
 
-input,
-button {
+input, button {
   outline: none;
 }
 
 /* button */
-.block-input__btn-add,
-.block-task__edit,
-.block-task__delete {
+.block-input__btn-add, .block-task__edit, .block-task__delete {
   background: none;
   border: 0px;
   color: #888;

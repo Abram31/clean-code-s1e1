@@ -17,7 +17,7 @@ var completedTasksHolder=document.getElementById("block-form__block-completed-ta
 //New task list item
 var createNewTaskElement=function(taskString){
 
-    var listItem=document.createElement("li");
+    var blockItem=document.createElement("aside");
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -32,10 +32,10 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
-    listItem.className = "block-task__list"
+    blockItem.className = "block-task__list"
     
     label.innerText=taskString;
-    label.className='block-form__task-input';
+    label.className="block-form__task-input";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -47,18 +47,19 @@ var createNewTaskElement=function(taskString){
     editButton.className ="block-task__edit";
 
     deleteButton.className="block-task__delete";
-    deleteButtonImg.src='./remove.svg';
-    deleteButtonImg.className = 'block-task__delete__img'
+    deleteButtonImg.src="./remove.svg";
+    deleteButtonImg.className = "block-task__delete__img"
+    deleteButtonImg.alt = "delete"
     deleteButton.appendChild(deleteButtonImg);
 
 
     //and appending.
-    listItem.appendChild(checkBox);
-    listItem.appendChild(label);
-    listItem.appendChild(editInput);
-    listItem.appendChild(editButton);
-    listItem.appendChild(deleteButton);
-    return listItem;
+    blockItem.appendChild(checkBox);
+    blockItem.appendChild(label);
+    blockItem.appendChild(editInput);
+    blockItem.appendChild(editButton);
+    blockItem.appendChild(deleteButton);
+    return blockItem;
 }
 
 
@@ -67,11 +68,11 @@ var addTask=function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
-    var listItem=createNewTaskElement(taskInput.value);
+    var blockItem=createNewTaskElement(taskInput.value);
 
-    //Append listItem to incompleteTaskHolder
-    incompleteTaskHolder.appendChild(listItem);
-    bindTaskEvents(listItem, taskCompleted);
+    //Append blockItem to incompleteTaskHolder
+    incompleteTaskHolder.appendChild(blockItem);
+    bindTaskEvents(blockItem, taskCompleted);
 
     taskInput.value="";
 
@@ -84,12 +85,12 @@ var editTask=function(){
     console.log("Change 'edit' to 'save'");
 
 
-    var listItem=this.parentNode;
+    var blockItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".block-task__edit");
-    var containsClass=listItem.classList.contains("block-task__block-edit");
+    var editInput=blockItem.querySelector("input[type=text]");
+    var label=blockItem.querySelector("label");
+    var editBtn=blockItem.querySelector(".block-task__edit");
+    var containsClass=blockItem.classList.contains("block-task__block-edit");
     //If class of the parent is .block-task__block-edit
     if(containsClass){
 
@@ -103,7 +104,7 @@ var editTask=function(){
     }
 
     //toggle .block-task__block-edit on the parent.
-    listItem.classList.toggle("block-task__block-edit");
+    blockItem.classList.toggle("block-task__block-edit");
 };
 
 
@@ -111,10 +112,10 @@ var editTask=function(){
 var deleteTask=function(){
     console.log("Delete Task...");
 
-    var listItem=this.parentNode;
-    var ul=listItem.parentNode;
+    var blockItem=this.parentNode;
+    var ul=blockItem.parentNode;
     //Remove the parent list item from the ul.
-    ul.removeChild(listItem);
+    ul.removeChild(blockItem);
 
 }
 
@@ -124,9 +125,9 @@ var taskCompleted=function(){
     console.log("Complete Task...");
 
     //Append the task list item to the #block-form__block-completed-tasks
-    var listItem=this.parentNode;
-    completedTasksHolder.appendChild(listItem);
-    bindTaskEvents(listItem, taskIncomplete);
+    var blockItem=this.parentNode;
+    completedTasksHolder.appendChild(blockItem);
+    bindTaskEvents(blockItem, taskIncomplete);
 
 }
 
@@ -136,9 +137,9 @@ var taskIncomplete=function(){
 //Mark task as incomplete.
     //When the checkbox is unchecked
     //Append the task list item to the #block-form__block-task.
-    var listItem=this.parentNode;
-    incompleteTaskHolder.appendChild(listItem);
-    bindTaskEvents(listItem,taskCompleted);
+    var blockItem=this.parentNode;
+    incompleteTaskHolder.appendChild(blockItem);
+    bindTaskEvents(blockItem,taskCompleted);
 }
 
 
