@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.description-img {
+.description__img {
   width: 100%;
 }
 
@@ -76,8 +76,8 @@ input, button {
 
 /* Heading */
 
-.block-form__btn-addItem,
-.block-form-title {
+.block-form__btn-additem,
+.block-form__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -109,7 +109,7 @@ input, button {
 }
 
 /* New Task */
-.block-form__btn-addItem {
+.block-form__btn-additem {
   display: block;
   margin: 0 0 20px;
 }
@@ -133,11 +133,11 @@ input, button {
   vertical-align: middle;
 }
 
-.block-task_checkbox {
+.block-task__checkbox {
   margin: 0 10px;
 }
 
-.block-form__task-input {
+.block-task__input {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -176,6 +176,6 @@ input, button {
   
 }
 
-.block-task__block-edit .block-form__task-input {
+.block-task__block-edit .block-task__input {
   display: none;
 }
