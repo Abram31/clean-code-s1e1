@@ -78,7 +78,6 @@ button {
 }
 
 /* Heading */
-
 .block-form__btn-additem,
 .block-form__title {
   color: #333;
@@ -89,7 +88,6 @@ button {
   margin: 0;
   text-transform: uppercase;
 }
-
 
 .block-input__input,
 .block-form__input-text {
@@ -104,7 +102,6 @@ button {
   font-family: Lato, sans-serif;
   color: #888;
 }
-
 
 .block-input__input:focus,
 .block-form__input-text:focus {
@@ -122,7 +119,6 @@ button {
 }
 
 /* Task list */
-
 .block-task__list {
   overflow: hidden;
   padding: 20px 0;
@@ -172,7 +168,6 @@ button {
 .block-form__input-text {
   display: none;
 }
-
 
 .block-task__block-edit .block-form__input-text{
   display: inline-block;
