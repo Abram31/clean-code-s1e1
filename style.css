@@ -37,7 +37,7 @@
 .block-input__input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow : 1;
 }
 
 .block-form__block-input {
@@ -150,7 +150,7 @@ button {
 }
 
 .block-form__input-text {
-  width: 226px
+  width : 226px;
 }
 
 .block-task__delete__img {
@@ -170,13 +170,13 @@ button {
 
 /* Edit Task */
 .block-form__input-text {
-  display: none
+  display : none;
 }
 
 
 .block-task__block-edit .block-form__input-text{
   display: inline-block;
-  width: 224px
+  width : 224px;
   
 }
 
