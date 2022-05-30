@@ -77,8 +77,7 @@ button {
 }
 
 /* Heading */
-/* h3, */
-/* label[for="new-task"], */
+
 .block-form__btn-addItem,
 .block-form-title {
   color: #333;
@@ -90,7 +89,7 @@ button {
   text-transform: uppercase;
 }
 
-/* input[type="text"], */
+
 .block-input__input,
 .block-form__input-text {
   margin: 0;
@@ -105,14 +104,13 @@ button {
   color: #888;
 }
 
-/* input[type="text"]:focus */
+
 .block-input__input:focus,
 .block-form__input-text:focus {
   color: #333;
 }
 
 /* New Task */
-/* label[for="new-task"], */
 .block-form__btn-addItem {
   display: block;
   margin: 0 0 20px;
@@ -124,7 +122,6 @@ button {
 
 /* Task list */
 
-/* li */
 .block-task__list{
   overflow: hidden;
   padding: 20px 0;
@@ -134,17 +131,14 @@ button {
   align-items: center;
 }
 
-/* li>* */
 .block-task__list>* {
   vertical-align: middle;
 }
 
-/* li>input[type="checkbox"], */
 .block-task_checkbox {
   margin: 0 10px;
 }
 
-/* li>label, */
 .block-form__task-input {
   padding-left: 10px;
   box-sizing: border-box;
@@ -153,7 +147,6 @@ button {
   overflow: hidden;
 }
 
-/* li>input[type="text"], */
 .block-form__input-text {
   width: 226px
 }
@@ -174,20 +167,17 @@ button {
 }
 
 /* Edit Task */
-/* ul li input[type=text] */
 .block-form__input-text {
   display: none
 }
 
-/* ul li.block-task__block-edit input[type=text] */
-/* .block-form__input-text */
+
 .block-task__block-edit .block-form__input-text{
   display: inline-block;
   width: 224px
   
 }
 
-.block-task__block-edit .block-form__task-input
-/* .block-tasks__title */ {
+.block-task__block-edit .block-form__task-input {
   display: none;
 }
