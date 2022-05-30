@@ -9,55 +9,55 @@
         charset="utf-8">
   </head>
   <body class="container">
-    <div class="description">
-      <img class="description-img" src="./eisenhower-matrix.jpg">
+    <section class="description">
+      <img class="description__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       <a class="description__more-info" 
           href="https://goal-life.com/page/method/matrix-eisenhower"> 
           Wantmore details?
       </a>
-    </div>
-    <div class="block-form">
-      <p>
-        <label class="block-form__btn-addItem" for="new-task">AddItem</label>
+    </section>
+    <section class="block-form">
+      <article>
+        <h3 class="block-form__btn-additem" for="new-task">AddItem</h3>
         <div class="block-form__block-input">
-          <input id="new-task"class="block-input__input" type="text">
+          <input class="block-input__input" id="new-task" type="text">
           <button class="block-input__btn-add">Add</button>
         </div>
-      </p>
-        <h3 class="block-form-title">Todo</h3>
-        <ul id="block-form__block-task">
-          <li class="block-task__list">
-            <input class="block-task_checkbox" type="checkbox">
-            <label class="block-form__task-input">Pay Bills</label>  
-            <input type="text" class="block-form__input-text">
-            <button class="block-task__edit">Edit</button>
-            <button class="block-task__delete">
-              <img class="block-task__delete__img" src="./remove.svg">
-            </button>
-          </li>
-          <li class="block-task__list block-task__block-edit">
-            <input class="block-task_checkbox" type="checkbox">
-            <label class="block-form__task-input">GoShopping</label>
-            <input type="text" value="Go Shopping" class="block-form__input-text">
-            <button class="block-task__edit">Save</button>
-            <button class="block-task__delete">
-              <img  class="block-task__delete__img"src="./remove.svg">
-            </button>
-          </li>
-        </ul>
-        <h3 class="block-form-title">Completed</h3>
-        <ul id="block-form__block-completed-tasks">
-          <li class="block-task__list">
-            <input class="block-task_checkbox" type="checkbox" checked>
-            <label class="block-form__task-input">See the Doctor</label>  
-            <input type="text" class="block-form__input-text">
-            <button class="block-task__edit">Edit</button>
-            <button class="block-task__delete">
-              <img class="block-task__delete__img" src="./remove.svg">
-            </button>
-          </li>
-        </ul>
-      </div>
+      </article>
+      <h3 class="block-form__title">Todo</h3>
+      <article id="incompleted-task">
+        <aside class="block-task__list">
+          <input class="block-task__checkbox" type="checkbox">
+          <label class="block-task__input">Pay Bills</label>  
+          <input type="text" class="block-form__input-text">
+          <button class="block-task__edit">Edit</button>
+          <button class="block-task__delete">
+            <img class="block-task__delete__img" src="./remove.svg" alt="Delete">
+          </button>
+        </aside>
+        <aside class="block-task__list block-task__block-edit">
+          <input class="block-task__checkbox" type="checkbox">
+          <label class="block-task__input">GoShopping</label>
+          <input type="text" value="Go Shopping" class="block-form__input-text">
+          <button class="block-task__edit">Save</button>
+          <button class="block-task__delete">
+            <img  class="block-task__delete__img" src="./remove.svg" alt="Delete">
+          </button>
+        </aside>
+      </article>
+        <h3 class="block-form__title">Completed</h3>
+      <article id="completed-task">
+        <aside class="block-task__list">
+          <input class="block-task__checkbox" type="checkbox" checked>
+          <label class="block-task__input">See the Doctor</label>  
+          <input type="text" class="block-form__input-text">
+          <button class="block-task__edit">Edit</button>
+          <button class="block-task__delete">
+            <img class="block-task__delete__img" src="./remove.svg" alt="Delete">
+          </button>
+        </aside>
+      </article>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
