@@ -2,7 +2,7 @@
 .container {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
 }
 
 .description {
@@ -68,14 +68,14 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   cursor: pointer;
 }
 
 .block-input__btn-add:hover,
 .block-task__edit:hover,
 .block-task__delete:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 /* Heading */
