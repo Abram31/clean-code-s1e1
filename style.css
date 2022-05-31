@@ -61,7 +61,8 @@ button {
 
 /* button */
 .block-input__btn-add,
-.block-task__edit, .block-task__delete {
+.block-task__edit, 
+.block-task__delete {
   background: none;
   border: 0px;
   color: #888;
